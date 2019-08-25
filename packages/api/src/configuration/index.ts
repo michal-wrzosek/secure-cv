@@ -7,3 +7,4 @@ export const JWT_SECRET: string = process.env.JWT_SECRET || 'jwt_secret_string';
 export const AUTH_TOKEN_MAX_AGE_IN_SECONDS: number = Number(process.env.AUTH_TOKEN_MAX_AGE_IN_SECONDS) || 60 * 60 * 24; // 1 day by default
 export const USER_PASSWORD_MIN_LENGTH: number = Number(process.env.USER_PASSWORD_MIN_LENGTH) || 6;
 export const USER_PASSWORD_MAX_LENGTH: number = Number(process.env.USER_PASSWORD_MAX_LENGTH) || 64;
+export const CORS_ORIGIN = process.env.CORS_ORIGIN || 'http://localhost:3000';
