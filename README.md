@@ -1,6 +1,13 @@
-# web-admin-api
+# secure-cv
 
-[![Build Status](https://travis-ci.com/michal-wrzosek/web-admin-api.svg?branch=master)](https://travis-ci.com/michal-wrzosek/web-admin-api)
+[![Build Status](https://travis-ci.com/michal-wrzosek/secure-cv.svg?branch=master)](https://travis-ci.com/michal-wrzosek/secure-cv)
+
+---
+
+This project was bootstrapped with `web-admin-api` boilerplate:
+https://github.com/michal-wrzosek/web-admin-api
+
+# web-admin-api
 
 Fullstack boilerplate of 3 services:
 
