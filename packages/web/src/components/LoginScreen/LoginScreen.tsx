@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { AuthContext, AuthSubjectState } from 'src/context/AuthContext';
+import XforTextFieldContainer from '../Base/Froms/XforTextFieldContainer';
 
 export const LoginScreen: React.FC = ({ children }) => {
   const [email, setEmail] = React.useState('');
@@ -26,8 +28,18 @@ export const LoginScreen: React.FC = ({ children }) => {
   return (
     <React.Fragment>
       <form onSubmit={handleFormSubmit}>
-        <input type="email" name="email" onChange={e => setEmail(e.target.value)} value={email} />
-        <input type="password" name="password" onChange={e => setPassword(e.target.value)} value={password} />
+        <XforTextFieldContainer
+          type={'email' as 'email'}
+          name="email"
+          onChange={e => setEmail(e.target.value)}
+          value={email}
+        />
+        <XforTextFieldContainer
+          type={'password' as 'password'}
+          name="password"
+          onChange={e => setPassword(e.target.value)}
+          value={password}
+        />
         <button type="submit">Log in</button>
       </form>
     </React.Fragment>
